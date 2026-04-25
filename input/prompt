@@ -1,0 +1,145 @@
+Crée une landing page moderne et responsive pour un événement "Color Run" 
+organisé par l'association "POUR (F) LA VIE", en utilisant HTML, CSS 
+(ou Tailwind CSS) et un peu de JavaScript pour les interactions. 
+Voici les spécifications détaillées :
+
+## 🎯 CONTEXTE
+Page d'accueil pour un événement de course solidaire et festive avec poudres 
+colorées, organisé par l'association "POUR (F) LA VIE".
+- **Date** : 27 septembre 2026
+- **Lieu** : Le Trévoux
+- **Distance** : 6 km
+- **Organisateur** : Association POUR (F) LA VIE
+
+## 🎨 IDENTITÉ VISUELLE
+- **Couleur principale** : Rose vif / Magenta (#EC4899 ou #FF1493)
+- **Couleur secondaire** : Rose pâle (#FCE7F3) pour les fonds
+- **Couleur texte** : Gris foncé / Noir (#1F2937)
+- **Fond** : Blanc avec touches de rose et effets de coups de pinceau
+- **Effets visuels** : Taches de peinture, éclaboussures, coups de pinceau roses 
+  en arrière-plan (utiliser des images SVG ou PNG transparentes)
+- **Note** : le rose s'accorde parfaitement avec l'identité de l'association 
+  "POUR (F) LA VIE" (le "F" évoquant les femmes / la lutte contre le cancer 
+  du sein, à confirmer selon ton univers)
+
+## 🔤 TYPOGRAPHIE
+- **Titres** : Police manuscrite/pinceau dynamique (Google Fonts : "Caveat Brush", 
+  "Permanent Marker" ou "Bangers")
+- **Corps de texte** : Sans-serif moderne (Poppins, Inter ou Montserrat)
+- **Boutons/Nav** : Sans-serif en MAJUSCULES avec letter-spacing
+
+## 📐 STRUCTURE DE LA PAGE
+
+### 1. HEADER (sticky)
+- Logo "COLOR RUN" à gauche (texte stylisé rose, sur 2 lignes)
+- Mention discrète sous le logo : "by POUR (F) LA VIE"
+- Menu navigation centré : ACCUEIL | L'ÉVÉNEMENT | PARCOURS | INFOS PRATIQUES | 
+  GALERIE | CONTACT
+- Lien actif souligné en rose
+- Bouton "INSCRIPTION" rose à droite (coins arrondis)
+
+### 2. HERO SECTION
+- **Côté gauche** :
+  - Titre énorme en 3 lignes : "PLUS QU'UNE COURSE," / "UNE EXPLOSION" / 
+    "DE COULEURS !" (police pinceau, 1ère ligne en noir, 2ème et 3ème en rose)
+  - Sous-titre : "Rejoins la Color Run organisée par l'association 
+    POUR (F) LA VIE : 6 km de bonheur, de musique et de poudre colorée pour 
+    une cause qui nous tient à cœur !"
+  - 2 boutons côte à côte :
+    - "JE M'INSCRIS" (rose plein, icône)
+    - "DÉCOUVRIR L'ÉVÉNEMENT" (outline rose, avec flèche bas)
+- **Côté droit** :
+  - Image d'une coureuse souriante avec poudre colorée
+  - Badge sur l'image (en bas) : "PROCHAINE ÉDITION" / "27 SEPTEMBRE 2026" 
+    (en gros, rose) / "TRÉVOUX (01600)"
+- Arrière-plan : effets de pinceau rose et taches de peinture
+
+### 3. BARRE DE FEATURES (carte blanche flottante)
+4 colonnes avec icônes roses + texte :
+- 👟 **6 KM** - de fun et de couleurs
+- 🎵 **ANIMATIONS** - DJ, danse & surprises
+- ✨ **POUDRES COLORÉES** - 100% sûres et biodégradables
+- ❤️ **COURSE SOLIDAIRE** - au profit de POUR (F) LA VIE
+
+### 4. SECTION "LA COLOR RUN, C'EST QUOI ?"
+- **Côté gauche** :
+  - Titre en 2 lignes (police pinceau, alternance noir/rose) : 
+    "LA COLOR RUN," / "C'EST QUOI ?"
+  - Texte descriptif : "Un concept unique où le sport rime avec plaisir 
+    et solidarité ! Marche, cours, danse, amuse-toi... et laisse-toi emporter 
+    par des nuages de couleurs à chaque kilomètre, dans les rues de Trévoux."
+  - "Ici, pas de chrono, ni de classement : seul compte le sourire à l'arrivée 
+    et le soutien à notre association !"
+  - Bouton "EN SAVOIR PLUS" (outline rose)
+- **Côté droit** :
+  - Lecteur vidéo (image de foule colorée + bouton play circulaire blanc 
+    au centre)
+
+### 5. SECTION "NOTRE ASSOCIATION" (NOUVELLE SECTION)
+- Bandeau dédié à "POUR (F) LA VIE"
+- **Côté gauche** : Logo de l'association (placeholder) + texte de présentation
+- **Côté droit** : 
+  - Titre : "POUR (F) LA VIE" (police pinceau rose)
+  - Sous-titre : "Notre association, notre engagement"
+  - Texte explicatif sur les missions de l'association (à compléter par 
+    l'utilisateur)
+  - Bouton "DÉCOUVRIR L'ASSOCIATION"
+- Mention : "Une partie des bénéfices de la Color Run est reversée à 
+  l'association"
+
+### 6. SECTION CTA
+- Bandeau avec coups de pinceau roses en haut et en bas
+- Icône groupe à gauche
+- Titre : "PRÊT À VIVRE UNE EXPÉRIENCE INOUBLIABLE ?" (police pinceau)
+- Sous-titre : "Rendez-vous le 27 septembre 2026 à Trévoux !"
+- Bouton blanc à droite : "JE M'INSCRIS MAINTENANT !" avec flèche
+
+### 7. FOOTER
+4 colonnes :
+- **Col 1** : 
+  - Logo "COLOR RUN"
+  - Mention "by POUR (F) LA VIE"
+  - Petite description de l'association
+- **Col 2** : "LIENS RAPIDES" - Accueil, L'événement, Parcours, Infos pratiques, 
+  L'association, Contact
+- **Col 3** : "SUIVEZ-NOUS" - Icônes Instagram, Facebook, TikTok (cercles roses) 
+  + #ColorRunTrevoux2026
+- **Col 4** : "PARTENAIRES" - Espaces réservés pour les logos partenaires 
+  (placeholders modifiables)
+- Ligne du bas centrée : "© 2026 Color Run - Association POUR (F) LA VIE - 
+  Tous droits réservés | Mentions légales | Politique de confidentialité"
+
+## ⚡ INTERACTIONS & ANIMATIONS
+- Animation au scroll (fade-in, slide-up) avec AOS ou Intersection Observer
+- Effet hover sur les boutons (légère élévation + changement de teinte)
+- Menu burger responsive en mobile
+- Smooth scroll sur les ancres
+- Bouton play vidéo cliquable (modal avec iframe YouTube ou similaire)
+- Compte à rebours optionnel jusqu'au 27 septembre 2026 dans le hero ou 
+  dans la section CTA
+
+## 📱 RESPONSIVE
+- Desktop : layout 2 colonnes
+- Tablet : adaptation des grilles (4→2 colonnes pour les features)
+- Mobile : tout en 1 colonne, menu burger, hero image en dessous du texte
+
+## 📂 STRUCTURE FICHIERS
+/color-run-trevoux
+  ├── index.html
+  ├── styles.css (ou tailwind config)
+  ├── script.js
+  ├── /assets
+  │   ├── /images (hero, vidéo-thumbnail, brush-strokes, logo asso)
+  │   └── /icons (SVG des features et réseaux sociaux)
+
+## ✅ EXIGENCES TECHNIQUES
+- HTML5 sémantique (header, nav, main, section, footer)
+- Accessibilité : alt sur images, aria-labels, contraste suffisant
+- SEO : meta tags optimisés (title : "Color Run Trévoux 2026 - POUR (F) LA VIE", 
+  description, Open Graph)
+- Performance : images optimisées (lazy loading)
+- Code propre, commenté et organisé
+- Données structurées Schema.org pour l'événement (Event + SportsEvent)
+
+Génère tous les fichiers nécessaires avec un design fidèle et soigné, 
+en mettant en avant la dimension solidaire de l'événement.
