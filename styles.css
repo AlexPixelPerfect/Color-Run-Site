@@ -614,12 +614,26 @@ ul { list-style: none; }
    SECTION – CTA
    ================================================ */
 .section-cta {
-  background: var(--pink) url('assets/images/cta-background.png') center center / cover no-repeat;
   position: relative;
   padding: 60px 0;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.section-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: min(100%, 1400px);
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(to right, #fff 0%, transparent 200px, transparent calc(100% - 200px), #fff 100%),
+    url('assets/images/cta-background.png') center center / cover no-repeat;
+  z-index: 0;
 }
 
 .cta-brush {
