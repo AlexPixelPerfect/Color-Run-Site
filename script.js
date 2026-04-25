@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav    = document.querySelector('.main-nav');
   const navOverlay = document.getElementById('nav-overlay');
 
+  // Active la transition seulement après le chargement initial pour éviter
+  // l'animation parasite causée par le changement right:auto → right:-100%
+  requestAnimationFrame(() => mainNav?.classList.add('nav-animated'));
+
   const openMobileNav = () => {
     burgerBtn.classList.add('open');
     burgerBtn.setAttribute('aria-expanded', 'true');
