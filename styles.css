@@ -105,6 +105,27 @@ ul { list-style: none; }
   box-shadow: 0 8px 24px rgba(0,0,0,.15);
 }
 
+/* ---------- Bouton arc-en-ciel ---------- */
+.btn-rainbow {
+  --rainbow: linear-gradient(90deg, #EC4899 0%, #F59E0B 22%, #22C55E 44%, #3B82F6 66%, #A855F7 88%, #EC4899 100%);
+  background: linear-gradient(white, white) padding-box, var(--rainbow) border-box;
+  border: 3px solid transparent;
+  color: #A855F7;
+}
+.btn-rainbow-text {
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.btn-rainbow.btn-white:hover,
+.btn-rainbow:hover {
+  background: linear-gradient(white, white) padding-box, var(--rainbow) border-box;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+
 /* ---------- Scroll animations ---------- */
 .fade-in-up {
   opacity: 0;
@@ -597,6 +618,8 @@ ul { list-style: none; }
   position: relative;
   padding: 60px 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .cta-brush {
@@ -620,18 +643,16 @@ ul { list-style: none; }
   position: relative;
   z-index: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 32px;
+  text-align: center;
 }
 
 .cta-left {
   display: flex;
   align-items: center;
   gap: 20px;
-  flex: 1;
-  min-width: 280px;
 }
 
 .cta-icon {
@@ -879,6 +900,11 @@ ul { list-style: none; }
    RESPONSIVE
    ================================================ */
 
+/* --- Desktop ≥ 1025px — évite le zoom excessif du fond CTA --- */
+@media (min-width: 1025px) {
+  .section-cta { min-height: 420px; }
+}
+
 /* --- Tablet ≤ 1024px --- */
 @media (max-width: 1024px) {
   .features-card { grid-template-columns: repeat(2, 1fr); }
@@ -899,8 +925,7 @@ ul { list-style: none; }
   .hero-visual { order: 1; }
   .hero-img-wrap { height: 420px; max-width: 100%; }
 
-  .cta-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
-  .cta-countdown { align-self: center; }
+  .cta-inner { gap: 24px; }
 }
 
 /* --- Mobile ≤ 640px --- */
@@ -959,7 +984,7 @@ ul { list-style: none; }
 
   /* CTA */
   .section-cta { padding: 44px 0; }
-  .cta-left { flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; }
+  .cta-left { gap: 12px; }
   .cta-countdown { gap: 4px; }
   .countdown-num { font-size: 1.6rem; }
 
