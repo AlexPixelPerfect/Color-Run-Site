@@ -705,7 +705,7 @@ ul { list-style: none; }
    FOOTER
    ================================================ */
 .site-footer {
-  background: var(--dark);
+  background: linear-gradient(135deg, #BE185D 0%, #9D174D 100%);
   color: rgba(255,255,255,.8);
   padding: 64px 0 0;
 }
@@ -715,17 +715,17 @@ ul { list-style: none; }
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255,255,255,.25);
 }
 
 .footer-col { display: flex; flex-direction: column; gap: 16px; }
 
-.footer-logo { color: var(--pink); font-size: 1.4rem; }
+.footer-logo { color: #FFFFFF; font-size: 1.4rem; }
 
 .footer-brand p {
   font-size: .82rem;
   line-height: 1.6;
-  opacity: .7;
+  opacity: .9;
   max-width: 240px;
 }
 
@@ -734,16 +734,16 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: .15em;
   text-transform: uppercase;
-  color: var(--pink);
+  color: #FFFFFF;
 }
 
 .footer-links { display: flex; flex-direction: column; gap: 8px; }
 .footer-links a {
   font-size: .85rem;
-  opacity: .7;
+  opacity: .9;
   transition: opacity var(--transition), color var(--transition);
 }
-.footer-links a:hover { opacity: 1; color: var(--pink); }
+.footer-links a:hover { opacity: 1; color: #FCE7F3; }
 
 /* Social */
 .social-links { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -752,7 +752,7 @@ ul { list-style: none; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--pink);
+  background: rgba(255,255,255,.2);
   color: var(--white);
   display: flex;
   align-items: center;
@@ -760,13 +760,13 @@ ul { list-style: none; }
   transition: transform var(--transition), background var(--transition);
 }
 .social-btn:hover {
-  background: var(--pink-deep);
+  background: rgba(255,255,255,.35);
   transform: translateY(-2px);
 }
 
 .footer-hashtag {
   font-size: .8rem;
-  color: var(--pink-mid);
+  color: #FCE7F3;
   font-weight: 600;
 }
 
@@ -780,12 +780,12 @@ ul { list-style: none; }
 .partner-placeholder {
   height: 48px;
   border-radius: var(--radius-sm);
-  border: 1px dashed rgba(255,255,255,.2);
+  border: 1px dashed rgba(255,255,255,.4);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: .7rem;
-  opacity: .4;
+  opacity: .7;
   text-transform: uppercase;
   letter-spacing: .06em;
 }
@@ -797,14 +797,14 @@ ul { list-style: none; }
 }
 .footer-bottom p {
   font-size: .75rem;
-  opacity: .5;
+  opacity: .75;
 }
 .footer-bottom a {
   opacity: 1;
-  color: var(--pink-mid);
+  color: #FCE7F3;
   transition: color var(--transition);
 }
-.footer-bottom a:hover { color: var(--pink); }
+.footer-bottom a:hover { color: #FFFFFF; }
 
 /* ================================================
    VIDEO MODAL
